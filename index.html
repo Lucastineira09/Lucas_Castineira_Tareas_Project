@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe del Sistema CRUD - Restaurant La Nueva Genovesa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>La Nueva Genovesa</h1>
+        <p>Informe Técnico del Sistema CRUD - Gestión del Restaurant</p>
+    </header>
+
+    <main class="contenido-principal">
+        
+        <!-- 1. INTRODUCCIÓN -->
+        <section class="bienvenida">
+            <h2>1. Introducción y Propósito</h2>
+            <p>
+                Este documento detalla el desarrollo del sistema informático CRUD para la administración del menú, control de stock (platos principales, entradas, bebidas de "El Pipa" y postres) y control de usuarios del restaurant.
+            </p>
+        </section>
+
+        <!-- 2. FUNCIONALIDADES -->
+        <section class="cajas-menu">
+            <div class="caja-categoria">
+                <h3>Registro de Usuarios</h3>
+                <p>Permite dar de alta al personal de salón y administración con validación de datos básica.</p>
+            </div>
+
+            <div class="caja-categoria">
+                <h3>Inicio de Sesión (Login)</h3>
+                <p>Pantalla de acceso centralizada que valida las credenciales y redirige según el rol correspondiente.</p>
+            </div>
+        </section>
+
+        <!-- 3. PANEL DE ADMINISTRADOR Y TABLA -->
+        <section class="bienvenida" style="margin-top: 20px;">
+            <h2>2. Panel de Administrador y Operaciones</h2>
+            <p>
+                Si el usuario ingresa con rol <code>admin</code>, el sistema habilita el panel de control exclusivo para el menú:
+            </p>
+            <ul style="text-align: left; display: inline-block; margin-top: 10px;">
+                <li><strong>Ver Tabla:</strong> Visualización en tiempo real de la base de datos de platos (milanesas, asado, empanadas del tucu, postres, etc.).</li>
+                <li><strong>Editar:</strong> Modificación de precios, descripciones o ingredientes de las comidas y bebidas.</li>
+                <li><strong>Archivar:</strong> Ocultar temporalmente platos o bebidas fuera de temporada en lugar de borrarlos definitivamente.</li>
+            </ul>
+        </section>
+
+        <!-- 4. PALETA DE COLORES Y ESTÉTICA -->
+        <section class="bienvenida" style="margin-top: 20px;">
+            <h2>3. Diseño y Códigos de Color</h2>
+            <p>Se mantuvo la misma línea visual institucional de la página web del restaurant:</p>
+            <div style="margin-top: 10px; text-align: left; display: inline-block;">
+                <p><span class="color-sample" style="background-color: #800000;"></span> <strong>Rojo Bordó Principal:</strong> <code>#800000</code> (Encabezados y botones)</p>
+                <p><span class="color-sample" style="background-color: #f5deb3; border: 1px solid #333;"></span> <strong>Fondo Trigo / Crema:</strong> <code>#f5deb3</code> (Fondo general del sitio)</p>
+                <p><span class="color-sample" style="background-color: #333333;"></span> <strong>Gris Oscuro / Negro:</strong> <code>#333333</code> (Menú de navegación y textos)</p>
+            </div>
+        </section>
+
+        <!-- 5. MEDIDAS DE SEGURIDAD -->
+        <section class="bienvenida" style="margin-top: 20px;">
+            <h2>4. Medidas de Seguridad</h2>
+            <ul style="text-align: left; display: inline-block; margin-top: 10px;">
+                <li><strong>Cifrado de Contraseñas:</strong> Las claves del personal se almacenan utilizando hash seguro.</li>
+                <li><strong>Control de Roles (RBAC):</strong> Restricción de rutas en el servidor para impedir que cuentas comunes accedan a los botones de edición del administrador.</li>
+                <li><strong>Protección SQL:</strong> Uso de consultas preparadas para evitar ataques de inyección de código.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- INTEGRANTES -->
+    <div class="integrantes">
+        <b>Integrantes del grupo:</b><br>
+        Ivan Acosta y Lucas Castiñeira[cite: 3]
+    </div>
+
+</body>
+</html>
